@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/convert_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center" >
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" 
+                        android:id="@+id/searchProdImageProgBar"
+                        />
+
+                    <ImageView
+                        android:id="@+id/custom_layout_favorites_offer_image"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_fog" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp" >
+
+                    <TextView
+                        android:id="@+id/custom_layout_favorites_offer_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:maxWidth="150dp"
+                        android:paddingRight="20dp"
+                        android:singleLine="true"
+                        android:text="Breakfast"
+                        android:ellipsize="marquee"
+                         android:marqueeRepeatLimit="2"
+  						  android:scrollHorizontally="true" 
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_alerts_listview_header_text" />
+
+                    <TextView
+                        android:id="@+id/custom_layout_favorites_offer_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:text="7.50"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_price_red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp" >
+
+                    <TextView
+                        android:id="@+id/custom_layout_favorites_offer_store_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/color_alerts_listview_description_secondary_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/custom_layout_offers_ic_overflow_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="TODO"
+                    android:focusable="false"
+                    android:scaleType="fitCenter"
+                    android:singleLine="true"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_menu_overflow_dark" />
+
+                <CheckBox
+                    android:id="@+id/custom_layout_offers_toggle_favorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/favorites_button_selector"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:visibility="visible"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/bottomlinear"
+             >
+
+            <TextView
+                android:id="@+id/custom_layout_favorites_offer_store_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="BlueFog"
+                android:textColor="@color/color_alerts_listview_description_secondary_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/custom_layout_favorites_offer_store_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:paddingRight="30dp"
+                android:text="300m"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

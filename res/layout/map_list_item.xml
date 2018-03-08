@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+     <ImageView 
+         android:id="@+id/maplistviewimg"
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_pin"
+    android:padding="5dp"
+    />
+<TextView 
+    android:id="@+id/maplistviewtext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:gravity="center_vertical"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textColor="#000000"
+    android:text="jaafdaasa"
+/>
+</LinearLayout>

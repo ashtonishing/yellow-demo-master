@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/buyopic/android/radius/BaseActivity.java" />
+    </issue>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/buyopic/android/fragments/CloseByListFragment.java" />
+        <ignore path="src/com/buyopic/android/fragments/OffersDetailFragment.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/buyopic/android/radius/ShowMapActivity.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/buyopic/android/fragments/CloseByListFragment.java" />
+        <ignore path="src/com/buyopic/android/fragments/OffersDetailFragment.java" />
+        <ignore path="src/com/buyopic/android/radius/BaseActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/buyopic/android/models/OrderStatus.java" />
+        <ignore path="src/com/buyopic/android/radius/BackgroundMonitorService.java" />
+    </issue>
+</lint>

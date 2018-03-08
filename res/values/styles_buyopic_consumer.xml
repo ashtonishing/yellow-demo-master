@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Buyopic_consumer" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_buyopic_consumer</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Buyopic_consumer</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Buyopic_consumer</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Buyopic_consumer</item>
+        <item name="android:actionBarTabBarStyle">@style/Divider</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Buyopic_consumer</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Buyopic_consumer</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_buyopic_consumer</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_buyopic_consumer</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Buyopic_consumer</item>
+        <item name="android:actionBarDivider">@null</item>
+    </style>
+
+    <style name="ActionBar.Solid.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+       <!--  <item name="android:background">@drawable/ab_solid_buyopic_consumer</item> -->
+        <item name="android:background">@color/new_action_bar_bg</item>
+        <item name="android:backgroundStacked">@null</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_buyopic_consumer</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Buyopic_consumer</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_buyopic_consumer</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Buyopic_consumer</item>
+    </style>
+
+    <style name="PopupMenu.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/four_border_bg</item>
+        <item name="android:divider">@color/color_alerts_listview_header_text</item>
+        <item name="android:dropDownSelector">@color/color_alerts_listview_header_text</item>
+        <item name="android:listSelector">@color/color_alerts_listview_header_text</item>
+    </style>
+
+    <style name="DropDownListView.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_buyopic_consumer</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_selector</item>
+        <!-- <item name="android:background">@null</item> -->
+        <item name="android:showDividers">none</item>
+        <item name="android:divider">@color/white</item>
+        <item name="android:height">80dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Divider" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+        <item name="android:background">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:showDividers">@null</item>
+    </style>
+
+    <style name="customTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:showDividers">none</item>
+        <item name="android:measureWithLargestChild">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DropDownNav.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_buyopic_consumer</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_buyopic_consumer</item>
+    </style>
+
+    <style name="ProgressBar.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+    </style>
+
+    <style name="ActionButton.CloseMode.Buyopic_consumer" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Buyopic_consumer.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Buyopic_consumer</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Buyopic_consumer</item>
+    </style>
+
+    <style name="ProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal"></style>
+
+</resources>

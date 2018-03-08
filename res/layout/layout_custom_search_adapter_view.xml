@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         >
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/layout_search_product_image_view"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/layout_search_product_title_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="150dp"
+                    android:paddingRight="20dp"
+                    
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_search_product_price_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layout_search_store_address_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+            <TextView
+                android:id="@+id/layout_search_store_address_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/layout_search_distance_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_alerts_listview_description_secondary_text" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- otherwise use -->
+    <item android:state_selected="true" android:color="@android:color/black"/>
+  <!-- use when selected -->
+    <item  android:color="@color/color_alerts_listview_description_secondary_text"/>
+</selector>

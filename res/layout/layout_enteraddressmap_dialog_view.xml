@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#80000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#00688B"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_action_bar_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              android:textColor="@color/color_alerts_listview_header_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Confirm Address :"
+                android:textStyle="bold"
+               
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageButton
+                android:id="@+id/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@android:color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/addressentrymaplay"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/screen_bg_color"
+            android:paddingLeft="8dp" >
+            
+              <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+    >
+                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+      
+         >
+
+      
+        <EditText
+            android:id="@+id/layout_map_enteraddressname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:hint="Address 1:*"
+            android:textColor="#000000"
+            android:maxLines="3"
+            >
+        </EditText>
+
+      
+        <EditText
+            android:id="@+id/layout_map_streetaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+              android:padding="10dp"
+              android:layout_margin="5dp"
+                android:hint="Address 2:*"
+                android:textColor="#000000"
+                android:maxLines="3"
+            >
+        </EditText>
+        
+                <EditText
+            android:id="@+id/layout_map_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+              android:padding="10dp"
+              android:layout_margin="5dp"
+              android:textColor="#000000"
+              android:maxLines="1"
+            >
+        </EditText>
+        
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+
+    <LinearLayout
+        android:id="@+id/statelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+         >
+
+               <EditText
+                     android:layout_margin="5dp"
+                   android:padding="10dp" 
+            android:id="@+id/layout_map_stateaddress"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000000"
+            android:maxLines="1"
+            >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pinlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/statelay"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+
+    
+    <EditText
+          android:layout_margin="5dp"
+                   android:padding="10dp" 
+        android:id="@+id/layout_map_pinaddress"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pintext"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:inputType="number"
+         />
+</RelativeLayout>
+
+            </LinearLayout>
+</ScrollView>
+        </RelativeLayout>
+        <RelativeLayout  android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/new_action_bar_bg"
+               >
+              <Button
+                android:id="@+id/dialogaddressedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" 
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                  android:background="@drawable/button_background"
+                
+                />
+         <Button
+                android:id="@+id/dialogaddressave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" 
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                  android:background="@drawable/button_background"
+                
+                />
+         <TextView 
+              android:id="@+id/dialogaddressfootertext"
+              android:layout_below="@+id/dialogaddressave"
+            
+             android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addressdialogfooter"
+                android:textColor="@android:color/black"
+                     android:shadowColor="@android:color/black"
+                      android:textAppearance="?android:attr/textAppearanceSmall"
+                      android:layout_marginLeft="5dp"
+                
+             
+             />
+</RelativeLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

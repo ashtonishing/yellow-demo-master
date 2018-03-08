@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderdialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#80000000"
+    android:gravity="center"
+    android:minHeight="500dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/new_action_bar_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/myordertext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Order Detail:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@android:color/black"
+                android:onClick="myClickMethod"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/itemtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Item :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemnametext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="Item :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/consumermailid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Mail ID :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/consumermailidtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="Item :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/consumerphonenum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Phone No:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/consumerphonenumtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="9999999999"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pricetext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Price :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pricevaluetext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="3000.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/quantitytext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Qty :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+              <TextView
+                android:id="@+id/quantitynumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="3000.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/timeofdeliverytext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Req. Time of Delivery :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+        
+            <TextView
+                android:id="@+id/timeofdelivery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="17:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/exptimeofdeliverytext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Exp. Time of Delivery :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+         <TextView
+                                android:id="@+id/exporderdeliverytime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                   android:layout_marginLeft="5dp"
+                             
+                                android:layout_weight="1"
+                                android:text="17:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                               >
+                            </TextView>
+        </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/orderstatustext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Order Status:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_header_text" />
+             <TextView
+                android:id="@+id/orderstatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="17:00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+     <ImageView
+                android:id="@+id/orderstatusspinner"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_confirmed"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/delivertotext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Deliver To:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mapmarkerimage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_map" />
+
+            <TextView
+                android:id="@+id/addresstext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:text="Req. Time of Delivery :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+   
+    </LinearLayout>
+
+</LinearLayout>

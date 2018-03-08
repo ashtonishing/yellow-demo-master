@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#80000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:gravity="center"
+         android:layout_marginTop="30dip"
+        android:orientation="vertical"
+        
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialogspotlight_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+               android:textColor="@color/color_alerts_listview_header_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Change My location :"
+                android:textStyle="bold"
+              
+                android:layout_marginLeft="5dp"
+                 />
+
+            <ImageButton
+                android:id="@+id/dialogspotlight_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@android:color/black" />
+        </LinearLayout>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+  <ImageButton
+                android:id="@+id/dialog_locationimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_arrow"
+                android:tint="@android:color/black" 
+                  android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/dialogspotlight_currentloc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                  android:layout_marginLeft="5dp"
+               android:textColor="@color/color_alerts_listview_header_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="My location"
+                android:textStyle="bold"
+                
+              
+              
+                 />
+
+          
+        </LinearLayout>
+
+            <AutoCompleteTextView
+        android:id="@+id/auto_complete_tv_spotlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="#000000"
+        android:textCursorDrawable="@drawable/color_cursor" 
+        android:imeOptions="actionSearch"
+        />
+            <ImageButton
+        android:id="@+id/button1"
+         android:src="@drawable/ic_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:tint="@android:color/black" 
+        android:background="@android:color/transparent"
+         />
+       
+    </LinearLayout>
+
+    
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="4dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center" >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp" />
+
+                <ImageView
+                    android:id="@+id/custom_layout_offers_image_view"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_fog" />
+
+                <TextView
+                    android:id="@+id/custom_layout_offers_view_more1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|left"
+                    android:clickable="true"
+                    android:gravity="bottom|left"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_alerts_listview_header_text"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/custom_layout_offers_title_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="170dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/custom_layout_offers_price_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_price_red" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/custom_layout_offers_message_description_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/custom_layout_offers_ic_overflow_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="TODO"
+                android:focusable="false"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu_overflow_dark" />
+
+            <CheckBox
+                android:id="@+id/custom_layout_offers_toggle_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:button="@drawable/favorites_button_selector"
+                android:focusable="false"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/custom_layout_offers_view_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:clickable="true"
+        android:text="See All"
+        android:gravity="bottom|left"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginLeft="40dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/color_alerts_listview_description_secondary_text" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Buyopic"
+    android:textColor="@color/color_red"
+    android:textStyle="bold"
+    android:shadowColor="@android:color/black"
+    android:shadowDx="2"
+    android:shadowDy="4"
+    android:shadowRadius="4"
+    android:textSize="22sp"
+    android:orientation="vertical" >
+    
+</TextView>

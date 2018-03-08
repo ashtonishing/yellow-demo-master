@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderdialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="#80000000"
+    android:gravity="center"
+    android:minHeight="400dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/new_action_bar_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/myordertext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="My Order :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@android:color/black"
+                android:onClick="myClickMethod"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/itemtext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Item :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemnametext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="Item :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/pricetext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Price :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pricevaluetext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="3000.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/quantitytext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Qty :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+            <EditText
+                android:id="@+id/quantitynumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                   android:background="@drawable/edittext_background"
+                   android:editable="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:maxLength="2"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/timeofdeliverytext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Req. Time of Delivery :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+         <EditText
+                                android:id="@+id/orderdeliverytime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                   android:layout_marginLeft="5dp"
+                                android:background="@drawable/edittext_background"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:inputType="datetime"
+                                android:layout_weight="2"
+                                android:singleLine="true" >
+                            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/delivertotext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Deliver To:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mapmarkerimage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_map" />
+
+            <TextView
+                android:id="@+id/addresstext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:text="Req. Time of Delivery :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancelbuttoninorderdialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/cancel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" 
+                android:background="@drawable/button_background"
+                  android:onClick="myClickMethod"
+                
+                />
+
+            <Button
+                android:id="@+id/submitbuttoninorderdialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                 android:gravity="center"
+                 android:layout_marginRight="10dp"
+                
+                android:text="@string/submit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" 
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                  android:onClick="myClickMethod"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

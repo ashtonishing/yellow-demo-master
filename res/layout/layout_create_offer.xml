@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@drawable/ic_scroll_bae_image" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/storedetails"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/no_padding_edittext_grey_bg"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/color_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <FrameLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp" >
+
+                        <ImageView
+                            android:id="@+id/custom_layout_home_list_view_store_logo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_logout" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp" >
+
+                        <TextView
+                            android:id="@+id/layout_offer_desc_consumer_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="Logic"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/color_alerts_listview_header_text" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/layout_offer_desc_consumer_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Logic tree IT Solutions,Banglore,ciry"
+                            android:textColor="@color/color_alerts_listview_header_text" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/color_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="2dp" >
+
+                <EditText
+                    android:id="@+id/layout_create_offer_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:hint="Title"
+                    android:inputType="text"
+                    android:textColor="@color/color_alerts_listview_description_secondary_text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/layout_create_offer_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="left|top"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:singleLine="false"
+                    android:textColor="@color/color_alerts_listview_description_secondary_text" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/layout_create_offer_product_image"
+                        android:layout_width="0dp"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_picture_gallery_new" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="4dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/offerpricetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Price"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_background" >
+
+                                <TextView
+                                     android:id="@+id/currencysymbol"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:shadowColor="@android:color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="1"
+                                    android:shadowRadius="10"
+                                    android:text=""
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@android:color/black" />
+
+                                <EditText
+                                    android:id="@+id/layout_create_offer_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:gravity="right|center"
+                                    android:hint="0.00"
+                                    android:inputType="numberDecimal" >
+                                </EditText>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/validfromtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Valid from"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+                            <EditText
+                                android:id="@+id/layout_create_offer_valid_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/edittext_background"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:inputType="datetime"
+                                android:singleLine="true" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/untiltext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:paddingTop="2dp"
+                                android:text="Until"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_alerts_listview_description_secondary_text" />
+
+                            <EditText
+                                android:id="@+id/layout_create_offer_valid_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/edittext_background"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:inputType="datetime"
+                                android:singleLine="true" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/layout_create_offer_checkbox_activate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/radio_button_selector"
+                android:focusable="false"
+                android:singleLine="true" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <Button
+            android:id="@+id/layout_create_offer_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="Save"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_alerts_listview_header_text" />
+
+        <Button
+            android:id="@+id/layout_create_offer_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_background"
+            android:minWidth="100dp"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_alerts_listview_header_text" />
+    </LinearLayout>
+
+</LinearLayout>

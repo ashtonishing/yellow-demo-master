@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg_color"
+    android:orientation="vertical"
+    android:id="@+id/registerlayout"
+     >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@drawable/ic_scroll_bae_image" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_register_merchant_store_id_retailer_id_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/layout_create_merchant_your_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:paddingLeft="4dp"
+                    android:text="Name:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_offers_desc_end_date_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/layout_register_merchant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:inputType="textEmailAddress" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/layout_register_merchant_role_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:paddingLeft="4dp"
+                    android:text="Status:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_register_merchant_role"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:text="BASIC"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/address_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_weight="1"
+                    android:paddingLeft="4dp"
+                    android:text="Address:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:text="Your Pic:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp" >
+
+                      <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" >
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/layout_register_addressmap_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="2dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_map_pic" />
+                </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" >
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/layout_register_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="2dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add_profile_pic" />
+                </FrameLayout>
+            </LinearLayout>
+              <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:paddingLeft="4dp"
+                    android:text="Phone Number:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_offers_desc_end_date_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/layout_register_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:inputType="number|phone" >
+            </EditText>
+              
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:paddingLeft="4dp"
+                    android:text="Email:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_offers_desc_end_date_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/layout_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:inputType="textEmailAddress" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:paddingLeft="4dp"
+                    android:text="Password:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_offers_desc_end_date_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/layout_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/layout_register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/layout_register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="Register"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_alerts_listview_header_text" />
+
+            <LinearLayout
+                android:id="@+id/layout_login_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_have_buyopic_"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_alerts_listview_header_text" />
+
+                <TextView
+                    android:id="@+id/layout_login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:text="Login Here"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_alerts_listview_header_text"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </ScrollView>
+   
+     <LinearLayout
+        android:id="@+id/layout_save_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:visibility="gone"
+         >
+
+        <Button
+            android:id="@+id/layout_register_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="Save"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_alerts_listview_header_text" />
+
+        <Button
+            android:id="@+id/layout_register_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_background"
+            android:minWidth="100dp"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_alerts_listview_header_text" />
+    </LinearLayout>
+    
+</LinearLayout>

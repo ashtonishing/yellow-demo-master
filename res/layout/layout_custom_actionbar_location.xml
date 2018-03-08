@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="20dp"
+    android:orientation="horizontal" >
+    
+    <ImageButton 
+        android:id="@+id/ic_slidemenubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_slidemenu"
+        />
+      <ImageButton 
+        android:id="@+id/ic_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icon_arrow"
+        />
+  
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow Shop"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:shadowColor="@color/color_alerts_listview_description_secondary_text"
+        android:shadowRadius="2"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_alerts_listview_header_text">
+        </TextView>
+
+</LinearLayout>

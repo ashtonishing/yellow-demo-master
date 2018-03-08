@@ -1,0 +1,30 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#ffffff</color>
+	<color name="button_selector_pressed">#ffaa00</color>
+	<color name="background_color">#fefff3</color>
+	<color name="text_color">#000000</color>
+	<color name="rsblue">#075c93</color>
+	<color name="medium_grey">#CACACA</color>
+	<color name="icon_divider">#4380a8</color>
+	<color name="title_bg_color">#48b9fa</color>
+	<color name="home_screen_bg_color">#eeeeee</color>
+	<color name="home_screen_font_color">#95d5fc</color>
+	<color name="home_screen_price_font_color">#ffc786</color>
+	<color name="home_screenpowered_by_bg_color">#808080</color>
+	<color name="color_red">#ff2600</color>
+	<color name="color_edit_text_fill_color">#EEECE1</color>
+	<color name="color_grey">#666666</color>
+	<color name="actionbar_bg_color">#c4bd97</color>
+	<color name="action_bar_bg_new_color">#a9a9a9</color>
+	<color name="color_alerts_listview_header_text">#404040</color>
+	<color name="color_alerts_listview_description_secondary_text">#7f7f7f</color>
+	 <color name="screen_bg_color">#dbdbdb</color>
+	 <color name="color_high_light_store">#fffb7d</color>
+	 <color name="color_divider">#c4bd97</color>
+	 <color name="color_price_red">#FF0000</color>
+	 <color name="color_discontinued">#F2F2F2</color>
+	 <color name="new_action_bar_bg">#96cfef</color>
+	  <color name="color_traffic_zone_background_primary">#e7e7e7</color>
+</resources>

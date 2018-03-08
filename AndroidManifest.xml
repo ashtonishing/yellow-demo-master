@@ -1,0 +1,274 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buyopic.android.beacon"
+    android:versionCode="1801012"
+    android:versionName="1.9" >
+
+    <!-- Production package   package="com.buyopic.android.beacon" -->
+    <!-- Demo Package  package="com.buyopic.android.demo" -->
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+      <permission
+        android:name="com.buyopic.android.beacon.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+ 
+    <uses-permission android:name="com.buyopic.android.beacon.permission.MAPS_RECEIVE" />
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+         <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+     
+ 
+    
+    <application
+        android:name="com.buyopic.android.radius.BuyOpic"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_yellow"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+          <!-- Goolge Maps API Key -->
+<meta-data
+     android:name="com.google.android.maps.v2.API_KEY"
+     android:value="AIzaSyAGDGZfPMaaxGRiesLEGDwft4lvl0fCX7U" />
+<meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.buyopic.android.radius.MonitoringActivity"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name="com.buyopic.android.radius.ShowMapActivity"
+            android:label="@string/mapheader" 
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.RangingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.BackgroundActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="iBeacon" >
+        </service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1" >
+                <action android:name="com.buyopic.android.radius.DID_RANGING" />
+                <action android:name="com.buyopic.android.radius.DID_MONITORING" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.buyopic.android.radius.ConsumersAlertsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+
+        <service android:name="com.buyopic.android.radius.BackgroundMonitorService" >
+        </service>
+
+        <receiver android:name="com.buyopic.android.radius.BootCompletedReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.buyopic.android.radius.OffersDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.DefaultConsumerRegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.BuyopicHomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.HomePageSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cloud-ml.herokuapp.com"
+                    android:pathPattern="/processurl/yellow"
+                    android:scheme="http" />
+                <data
+                    android:host="www.cloud-ml.herokuapp.com"
+                    android:pathPattern="/processurl/yellow"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="prod-yellow.herokuapp.com"
+                    android:pathPattern="/processurl/yellow"
+                    android:scheme="http" />
+                <data
+                    android:host="www.prod-yellow.herokuapp.com"
+                    android:pathPattern="/processurl/yellow"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cloud-ml-client-demo-2.herokuapp.com"
+                    android:pathPattern="/processurl/yellow"
+                    android:scheme="http" />
+                <data
+                    android:host="www.cloud-ml-client-demo-2.herokuapp.com"
+                    android:pathPattern="/processurl/yellow"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="2e0e4abbf2fffeec59c2e1c3da977b8bce515861" />
+
+        <activity
+            android:name="com.buyopic.android.radius.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan" >
+        </activity>
+
+        <receiver android:name="com.buyopic.android.radius.CheckUpdatesBroadcast" >
+        </receiver>
+        <receiver android:name="com.buyopic.android.radius.TrackDistanceBroadCast" >
+        </receiver>
+
+        <activity
+            android:name="com.buyopic.android.radius.ConsumerLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="prod-yellow.herokuapp.com"
+                    android:pathPattern="/confirmconsumeraccount"
+                    android:scheme="http" />
+                <data
+                    android:host="www.prod-yellow.herokuapp.com"
+                    android:pathPattern="/confirmconsumeraccount"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cloud-ml.herokuapp.com"
+                    android:pathPattern="/confirmconsumeraccount"
+                    android:scheme="http" />
+                <data
+                    android:host="www.cloud-ml.herokuapp.com"
+                    android:pathPattern="/confirmconsumeraccount"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cloud-ml-client-demo-2.herokuapp.com"
+                    android:pathPattern="/confirmconsumeraccount"
+                    android:scheme="http" />
+                <data
+                    android:host="www.cloud-ml-client-demo-2.herokuapp.com"
+                    android:pathPattern="/confirmconsumeraccount"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.ConsumerRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.SharedByMeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.CreateNewListingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.buyopic.android.radius.MyListingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+         <activity
+            android:name="com.buyopic.android.radius.MyOrdersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Buyopic_consumer" >
+        </activity>
+    </application>
+
+</manifest>
